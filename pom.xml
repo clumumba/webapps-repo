@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://http://54.161.24.6:8081/repository/safcom-releases/</url>
+	      <url>http://54.161.24.6:8081/repository/safcom-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://http://http://54.161.24.6:8081/repository/safcom-snapshot/</url>
+	      <url>http://54.161.24.6:8081/repository/safcom-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
