@@ -95,19 +95,19 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://54.234.224.46:8081/repository/mpesa-releases/</url>
+	      <url>http://54.234.224.46:8081/repository/weeh-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.234.224.46:8081/repository/mpesa-snapshot/</url>
+	      <url>http://54.234.224.46:8081/repository/weeh-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>mpesa</finalName>
+		<finalName>weeh</finalName>
 		
 		<plugins>
 			<plugin>
