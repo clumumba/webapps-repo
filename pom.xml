@@ -95,19 +95,19 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://3.88.41.211:8081/repository/safcom-releases/</url>
+	      <url>http://34.228.170.43:8081/repository/safcom-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.88.41.211:8081/repository/safcom-snapshot/</url>
+	      <url>http://34.228.170.43:8081/repository/safcom-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>mpesa</finalName>
+		<finalName>kodi</finalName>
 		
 		<plugins>
 			<plugin>
