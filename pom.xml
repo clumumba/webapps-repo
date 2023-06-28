@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://54.234.224.46:8081/repository/weeh-release/</url>
+	      <url>http://18.234.65.127:8081/repository/safcom-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.234.224.46:8081/repository/weeh-snapshot/</url>
+	      <url>http://18.234.65.127:8081/repository/safcom-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
