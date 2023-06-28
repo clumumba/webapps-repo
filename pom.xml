@@ -107,7 +107,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>weeh</finalName>
+		<finalName>mshwari</finalName>
 		
 		<plugins>
 			<plugin>
