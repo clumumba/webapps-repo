@@ -2,7 +2,7 @@ pipeline{
   agent any 
   tools {
     maven "maven"
-  }  
+  } 
   stages {
     stage('1GetCode'){
       steps{
@@ -34,7 +34,7 @@ pipeline{
     stage('8deploy2prod'){
       steps{
         
-        deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://44.211.140.231:8000/')], contextPath: null, war: 'target/*war'
+        deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://54.210.106.14:8000/')], contextPath: null, war: 'target/*war'
       }
     }
 }
