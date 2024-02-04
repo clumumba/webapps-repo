@@ -7,7 +7,7 @@ pipeline{
     stage('1 GetCode 1'){
       steps{
         sh "echo 'cloning the latest application version' "
-      checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'githubcredentials', url: 'https://github.com/clumumba/webapps-repo']]
+        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/clumumba/webapps-repo.git']]
        )
      }
   }
