@@ -36,13 +36,9 @@ pipeline{
       sh "echo artifacts uploaded"
     }
    }
-     stage('5deploy') {
-    steps{
-      deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://100.26.217.86:8080/')], contextPath: null, war: 'target/*war'
-        }
-   }
+     
    
-   //stage('5deploy') {}
+   /*
   }
 post{ 
     always{
@@ -67,3 +63,4 @@ LandmarkTech ''', recipientProviders: [buildUser(), developers()], subject: 'Bui
 }
 
 }
+*/

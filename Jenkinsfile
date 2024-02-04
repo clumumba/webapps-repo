@@ -4,7 +4,7 @@ pipeline{
     maven "maven"
   } 
   stages {
-    stage('1GetCode'){
+    stage('1 GetCode 1'){
       steps{
         sh "echo 'cloning the latest application version' "
       checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'githubcredentials', url: 'https://github.com/clumumba/webapps-repo']]
@@ -12,7 +12,7 @@ pipeline{
      }
   }
     
-    stage('3Test+Build'){
+    stage('2 Test+ 3 Build'){
       steps{
         sh "echo 'running JUnit-test-cases' "
         sh "echo 'testing must passed to create artifacts ' "
@@ -20,23 +20,18 @@ pipeline{
       }
     }
     
-    stage('4CodeQuality'){
+    stage('4 CodeQuality'){
       steps{
         sh "echo 'Perfoming CodeQualityAnalysis' "
         sh "mvn sonar:sonar"
       }
     }
-    stage('5uploadNexus'){
+    stage('5 uploadNexus'){
       steps{
         sh "mvn deploy"
       }
     } 
-    stage('8deploy2prod'){
-      steps{
-        
-        deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://54.210.106.14:8000/')], contextPath: null, war: 'target/*war'
-      }
-    }
+    
 }
 /*
   post{
